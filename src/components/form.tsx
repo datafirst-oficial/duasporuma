@@ -35,15 +35,15 @@ export function Form({ searchParams: { utm_campaign, utm_content, utm_medium, ut
                 setSelectedDDI(userData);
                 //@ts-ignore
                 setUserDDI(userData.ddi);
-                
+
                 const selectElement = document.getElementById('ddi-select') as HTMLSelectElement;
-                
+
                 if (selectElement) {
-                    
+
                     setTimeout(() => {
                         //@ts-ignore
                         selectElement.value = userData.ddi;
-                        
+
                         // Atualizar o texto da opção selecionada para mostrar apenas o DDI do usuário
                         Array.from(selectElement.options).forEach(option => {
                             //@ts-ignore
@@ -77,21 +77,29 @@ export function Form({ searchParams: { utm_campaign, utm_content, utm_medium, ut
 
     useEffect(() => {
         // Set UTM parameters dynamically
+
         if (typeof window !== 'undefined') {
             setTimeout(() => {
+
+                const utmsource = new URLSearchParams(window.location.search).get('utm_source')
+                const utmcampaign = new URLSearchParams(window.location.search).get('utm_medium')
+                const utmmedium = new URLSearchParams(window.location.search).get('utm_campaign')
+                const utmcontent = new URLSearchParams(window.location.search).get('utm_content')
+                const utmterm = new URLSearchParams(window.location.search).get('utm_term')
+
                 const inpt0 = document.getElementById('field[80]') as HTMLInputElement; // pagina
-                const inpt1 = document.getElementById('field[108]') as HTMLInputElement; // utmsource
-                const inpt3 = document.getElementById('field[107]') as HTMLInputElement; // utmcampaign
-                const inpt2 = document.getElementById('field[109]') as HTMLInputElement; // utmmedium
-                const inpt4 = document.getElementById('field[111]') as HTMLInputElement; // utmcontent
-                const inpt5 = document.getElementById('field[110]') as HTMLInputElement; // utmterm
+                const inpt1 = document.getElementById('field[112]') as HTMLInputElement; // utmsource
+                const inpt3 = document.getElementById('field[113]') as HTMLInputElement; // utmcampaign
+                const inpt2 = document.getElementById('field[114]') as HTMLInputElement; // utmmedium
+                const inpt4 = document.getElementById('field[115]') as HTMLInputElement; // utmcontent
+                const inpt5 = document.getElementById('field[116]') as HTMLInputElement; // utmterm
 
                 inpt0.value = pag[1] || 'nao-traqueado';
-                inpt1.value = utm_source || 'nao-traqueado';
-                inpt2.value = utm_medium || 'nao-traqueado';
-                inpt3.value = utm_campaign || 'nao-traqueado';
-                inpt4.value = utm_content || 'nao-traqueado';
-                inpt5.value = utm_term || 'nao-traqueado';
+                inpt1.value = utmsource || 'nao-traqueado';
+                inpt2.value = utmcampaign || 'nao-traqueado';
+                inpt3.value = utmmedium || 'nao-traqueado';
+                inpt4.value = utmcontent || 'nao-traqueado';
+                inpt5.value = utmterm || 'nao-traqueado';
             }, 2000);
         }
     }, [cont]);
