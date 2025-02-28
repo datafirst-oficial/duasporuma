@@ -17,7 +17,7 @@ export default function Page({ searchParams }: FormProps) {
         <p className="text-white font-bold sm:text-base text-sm">Exclusivo para brasileiros que moram na Europa</p>
       </div>
       <Header5
-        title={<span>Volte ao Brasil todos os anos com 50% de desconto e nunca mais pense em ir embora da Europa</span>}
+        title={<span>Volte ao Brasil todos os anos com <span className="text-orange-500">50% de desconto</span> e nunca mais pense em ir embora da Europa</span>}
         description={<>Inscreva-se agora no Treinamento online e gratuito e junte-se à Comunidade de Brasileiros na Europa que Aproveitará Férias, Natal ou Ano Novo no Brasil com Passagens 50% mais baratas! <strong>Não Fique de Fora!</strong></>}
         searchParams={searchParams}
       />
