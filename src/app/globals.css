@@ -82,6 +82,7 @@ form ._form-content :nth-child(n+6):nth-child(-n+11) {
   z-index: -50;
   opacity: 0
 }
+#_forms_34 ._form-content ._form_element ._field-wrapper input[type=text],
 #_forms_31 ._form-content ._form_element ._field-wrapper input[type=text],
 #_forms_30 ._form-content ._form_element ._field-wrapper input[type=text] {
   background: transparent;
@@ -92,6 +93,7 @@ form ._form-content :nth-child(n+6):nth-child(-n+11) {
   font-weight: 600!important;
   color: #fff!important;
 }
+#_forms_34 ._form-content ._form_element,
 #_forms_31 ._form-content ._form_element,
 #_forms_30 ._form-content ._form_element {
   margin-bottom: 8px!important;
@@ -111,6 +113,7 @@ form ._form-content button._submit {
   background-color: #2e57bf!important;
   font-size: 16px!important;
 }
+#_forms_34 ._form-content button._submit,
 #_forms_31 ._form-content button._submit {
   width: 100%!important;
   background-color: #D97706!important;
@@ -121,6 +124,7 @@ form ._form-content button._submit {
   font-size: 15px!important;
   text-transform: uppercase;
 }
+#_forms_34 ._form-content button,
 #_forms_31 ._form-content button {
   background-color: #D97706!important;
   font-size: 16px!important;

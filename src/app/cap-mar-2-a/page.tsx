@@ -1,11 +1,12 @@
 import { Button } from "@/components/button";
 import Calendar from "@/components/calendar";
 import { Card } from "@/components/card";
-import { Header } from "@/components/header";
+import { Header5 } from "@/components/header-5";
 import HeroFlex from "@/components/heroflex";
 import Section from "@/components/section";
 import { Slider } from "@/components/slider";
 import Image from "next/image";
+
 
 interface FormProps {
   searchParams: {
@@ -20,8 +21,11 @@ interface FormProps {
 export default function Page({ searchParams }: FormProps) {
   return (
     <div className="">
-      <Header
-        title={<span>Volte ao Brasil todos os anos com 50% de desconto e nunca mais pense em ir embora da Europa</span>}
+      <div className="fixed top-0 left-0 w-full  bg-orange-500 flex items-center justify-center z-50 py-2 border-b border-white">
+        <p className="text-white font-bold sm:text-base text-sm">Exclusivo para brasileiros que moram na Europa</p>
+      </div>
+      <Header5
+        title={<span>Volte ao Brasil todos os anos com <span className="text-orange-500">50% de desconto</span> e nunca mais pense em ir embora da Europa</span>}
         description={<>Inscreva-se agora no Treinamento online e gratuito e junte-se à Comunidade de Brasileiros na Europa que Aproveitará Férias, Natal ou Ano Novo no Brasil com Passagens 50% mais baratas! <strong>Não Fique de Fora!</strong></>}
         searchParams={searchParams}
       />
@@ -64,6 +68,7 @@ export default function Page({ searchParams }: FormProps) {
               <p className="sm:text-lg font-semibold text-[#363636]">Aumentos de preços por todos os lados. Isso não é diferente no mundo das passagens aéreas. O preço alto das passagens impossibilitam nossas famílias de se relacionar com os avós, familiares e amigos, assim como de passarmos datas importantes no Brasil, nos fazendo perder o recurso mais importante que temos: o tempo.</p>
               <p className="sm:text-lg font-semibold text-[#363636]">Chegou a hora de você <strong>aprender emitir passagens com 50% de desconto e nunca mais perder uma data importante</strong> no Brasil por causa dos preços das passagens.</p>
               <p className="sm:text-lg font-semibold text-[#363636]">O treinamento Duas Por Uma é o movimento que levará o maior número de brasileiros morando no exterior para passar datas importantes no Brasil em 2024. <strong>Vai deixar sua família de fora?</strong></p>
+              <Button type="redirect" />
             </div>
           </HeroFlex>
         </Section>
@@ -114,6 +119,7 @@ export default function Page({ searchParams }: FormProps) {
                   <span className="ps-4">Como emitir passagens de executiva pelo preço da econômica.</span>
                 </li>
               </ul>
+              <Button type="redirect" />
             </div>
           </div>
         </Section>
@@ -302,6 +308,8 @@ export default function Page({ searchParams }: FormProps) {
                 </li>
               </ul>
               <p className="text-my text-lg font-medium">Dá uma olhada nas experiências que eu já viví, graças a esses conhecimentos que eu vou te ensinar…</p>
+              <Button type="redirect" />
+            
             </div>
           </HeroFlex>
         </Section>
