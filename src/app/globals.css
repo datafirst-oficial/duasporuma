@@ -74,7 +74,7 @@ form ._form-content {
   background: #1e2140!important
 }
 #_forms_31,
-#_forms_30 {
+#_forms_35 {
   width: 100%
 }
 form ._form-content :nth-child(n+6):nth-child(-n+11) {
@@ -84,7 +84,7 @@ form ._form-content :nth-child(n+6):nth-child(-n+11) {
 }
 #_forms_34 ._form-content ._form_element ._field-wrapper input[type=text],
 #_forms_31 ._form-content ._form_element ._field-wrapper input[type=text],
-#_forms_30 ._form-content ._form_element ._field-wrapper input[type=text] {
+#_forms_35 ._form-content ._form_element ._field-wrapper input[type=text] {
   background: transparent;
   background-color: '';
   border-radius: 32px!important;
@@ -95,7 +95,7 @@ form ._form-content :nth-child(n+6):nth-child(-n+11) {
 }
 #_forms_34 ._form-content ._form_element,
 #_forms_31 ._form-content ._form_element,
-#_forms_30 ._form-content ._form_element {
+#_forms_35 ._form-content ._form_element {
   margin-bottom: 8px!important;
   transform: translateY(12px)
 }
@@ -109,7 +109,7 @@ form ._form-content button._submit {
   font-size: 15px!important;
   text-transform: uppercase;
 }
-#_forms_30 ._form-content button {
+#_forms_35 ._form-content button {
   background-color: #2e57bf!important;
   font-size: 16px!important;
 }

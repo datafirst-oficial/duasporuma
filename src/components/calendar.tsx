@@ -1,5 +1,5 @@
 export default function Calendar() {
     return (
-        <p>17, 19 e 21 de Março de 2025</p>
+        <p>26, 28 e 30 de Maio de 2025</p>
     )
 }
