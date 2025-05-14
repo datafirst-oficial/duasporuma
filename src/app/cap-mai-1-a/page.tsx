@@ -63,7 +63,7 @@ export default function Page({ searchParams }: FormProps) {
               </ul>
               <p className="sm:text-lg font-semibold text-[#363636]">Aumentos de preços por todos os lados. Isso não é diferente no mundo das passagens aéreas. O preço alto das passagens impossibilitam nossas famílias de se relacionar com os avós, familiares e amigos, assim como de passarmos datas importantes no Brasil, nos fazendo perder o recurso mais importante que temos: o tempo.</p>
               <p className="sm:text-lg font-semibold text-[#363636]">Chegou a hora de você <strong>aprender emitir passagens com 50% de desconto e nunca mais perder uma data importante</strong> no Brasil por causa dos preços das passagens.</p>
-              <p className="sm:text-lg font-semibold text-[#363636]">O treinamento Duas Por Uma é o movimento que levará o maior número de brasileiros morando no exterior para passar datas importantes no Brasil em 2024. <strong>Vai deixar sua família de fora?</strong></p>
+              <p className="sm:text-lg font-semibold text-[#363636]">O treinamento Duas Por Uma é o movimento que levará o maior número de brasileiros morando no exterior para passar datas importantes no Brasil em 2025. <strong>Vai deixar sua família de fora?</strong></p>
             </div>
           </HeroFlex>
         </Section>
